@@ -1,0 +1,218 @@
+
+
+to start react project 
+ > npm start
+
+ By default our project runs on 
+    localhost:3000
+
+In react default app.js
+
+what is component in react
+    - it is partial part of your app 
+    - In react we have two types of component
+        1. function component : when your main focus is UI design
+        2. class component : when we have implement complex logic then it is
+                             advisable to use class component.
+
+
+How to ger view or output of indivisual component 
+    - copy that component name and write as tag wherver you want.
+
+
+jsx : it makes react code easy and allow is to write html code in react
+    -in js we must have one parent element to wrap another 
+     multiple element. Parent element could be <div>, <p> or any block element.
+
+
+props :
+    - it is parameter or functional parameter which is used to pass data inside
+    parameter.
+    -prop returns object type data to us.
+    -In function component we access props with {props.propName}
+    - in class component we access props with {this.props.propName}
+
+State :
+    - it used to handle and manage essential data in class component.
+    - State returns as object type of data
+    - state is available in only class component.
+
+setState() : 
+    -Used to manipulate state data
+
+
+destructuring() :
+    -creating constant variable to store data in it
+    -we can destructure state as well as props 
+
+
+Events and function in React 
+onclick Event
+onMouseOver
+
+
+Conditional rendering (display component)
+    1.if-else
+    2.element as variable
+    3.ternary operator
+    4.short circuit : if the condition is true then only o/p will be shown
+
+
+How to apply css to the react
+
+
+React.fragment 
+    it is an alternative for jsx. 
+    It removes unwanted elements from react.
+
+
+Component interactions
+    getting one component data into another component
+    for this in between two component they must have parent child relationship
+    to establish parent child relation between component name inside parent component inside the render method
+
+
+
+Virtual DOM 
+    in react, instead of manipulating browser DOM directly, react creates 
+Virtual DOM in memory where it does all the necessary changes required in browser DOM.
+
+
+How to display Array of object in list
+
+
+How to use bootstrap in React
+
+
+Pure Component 
+    it prevents unwanted re rendering of component
+    it performs shallow comparison
+    it works only in class component
+    extend component with pureComponent class
+
+React.memo()
+     it prevents unwanted re rendering of function component
+
+
+ref :
+    it allows us to access DOM notes directly as well as its values
+
+    How to use ref:
+        Create ref variable
+        Assign to an element
+        access it wherever you want
+
+Error Boundary
+   - react component which used to handle errors in component
+   - it contains two component lifecycle method to handle errors
+        1. getDerivedStateFromError - it is static method and get called 
+        automatically when error is ocurred.
+        2. componentDidCatch - it displays error-log.
+
+    
+Form validation 
+    we use regular expression 
+
+
+Password validation
+    -Routing : display component view or output by writing its path in browser url
+                to perform routing in react, react-router-dom library must be installed.
+            -npm i react-router-dom 
+            import {BrowserRouter,Routes,Route} from 'react-router-dom';
+                in react routing we have to use three directories:
+                    1.browser-router : 
+                    2.routes :
+                    3.route :
+
+            1.Naming Routing :
+            2.Default Routing : 
+            3.parameterized Routing : passing parameter with pathname 
+            4.child Routing : defining one router another router
+
+            wild card routing : 
+            -when user adds wrong path in browser then it redirect to this component
+            -it is denoted by *
+            -it must be last routing in routing path
+
+
+React bootstrap: 
+    npm install react-bootstrap bootstrap
+
+
+Component lifecycle method
+    it is available only in class component
+    it is divided into four phases
+        1. Mounting Phase : it executes when class is initialized
+            -constructor
+            -getDerivedStateFromProps : used to assign data from props to state
+
+            -render : renders data on browser
+            -componentDidMount : it executes once after render method
+        
+        2.Update Phase: When we Update/manipulate DOM, Update phase executes
+            -constructor : when component/object gets initialized 
+            -shouldComponentUpdate : it decides whether the component will Update DOM value or notes. it return boolean value
+            -render
+            -getSnapShotBeforeUpdate : return DOM value before updating
+
+            -componentDidUpdate : return DOM value after updating
+
+        3. Unmounting Phase: 
+            -componentWillunmount : it will execute just before removing component, it disconnects the connection with database server and the other components
+        
+        4. Error Phase:
+            -getDerivedStateFromError
+            -componentDidCatch
+
+React Hooks: 
+    -Allows us to use state and other class component features in function component.
+    -It works only in function component. 
+    -It introduced in react 16..
+    -There are total 8 hooks..
+
+        useState() - it allows us to use hook in function component.
+                     from useState() hook, we extract two things (values) 
+                        1. currentState: 
+                        2. function to manipulate state:
+                    in useState() hook, you can pass number, string, boolean, array, object type of data.
+
+        useEffect(callback-function,dependency) :
+                    -it is used to perform side effect amd action in function
+                    -it can perform fetching data, direct DOM manipulation
+        
+        install json server
+                > install i json-server -g
+        create database file on json-server 
+        access db folder
+        json-server --watch -p 8888 db.json => start json server
+
+
+        install axios library : allows us to make request (get,put,post,delete) from client to server
+        >npm i axios
+        
+        we make get request
+
+        use font awesome icon
+        >npm i font-awesome
+
+        Redux 
+    it is used to store manage and track state of js apps
+    it is open source javascript library
+
+    it works on three main concepts-
+        1. store : It holds state of application
+        2. action : It describes changes with state
+        3. reducer : It actually carry out state transition depending on store and action
+
+    install Redux
+    >npm i Redux
+
+
+        hoisting
+        closure
+        es5 es6
+        async await
+        callback
+        promises
+        let var const
+        oops

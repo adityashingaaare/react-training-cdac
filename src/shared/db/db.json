@@ -1,0 +1,34 @@
+{
+  "product": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "price": 85000,
+      "company": "HP"
+    },
+    {
+      "id": 103,
+      "name": "CPU",
+      "price": "45000",
+      "company": "ROG"
+    },
+    {
+      "id": 104,
+      "name": "Laptop",
+      "price": 55000,
+      "company": "SONY"
+    },
+    {
+      "id": 105,
+      "name": "Laptop",
+      "price": 32000,
+      "company": "TOSHIBA"
+    },
+    {
+      "id": 106,
+      "name": "Laptop",
+      "price": 93000,
+      "company": "FUJITSU"
+    }
+  ]
+}
